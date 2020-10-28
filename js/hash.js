@@ -94,7 +94,7 @@ function checkWinner(){
 
 function changeWinner(square) {
     winner = square.innerHTML;
-    selectedWinner2.innerHTML = winner;
+    selectedWinner.innerHTML = winner;
 }
 
 function changeColorSquare(square1, square2, square3) {
@@ -116,7 +116,7 @@ function checkSequence(square1, square2, square3) {
 function restart()
 {
     winner = null;
-    selectedWinner2.innerHTML = '';
+    selectedWinner.innerHTML = '';
 
     for (var i = 1; i <= 9; i++) {
         var square = document.getElementById(i);
